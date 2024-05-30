@@ -1,0 +1,62 @@
+{#
+    Slack Archive: https://hubspotdev.slack.com/archives/CFPRTEGTX/p1716979428850989
+    Preview Link: http://45442241.hs-sites.com/cfprtegtx
+#}
+
+
+{# Solution #}
+
+<script>
+    const newObject = [
+        {% for item in module.field_group %}
+        {
+            "col_name": "{{ item.col_name }}",
+            "input_type": "{{ item.input_type }}"
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+    ];
+
+    console.log("🍹 newObject", newObject);
+</script>
+
+{# End of solution #}
+
+
+{# DEMO part #}
+
+<div>
+    <h2>HubL code</h2>
+    <pre>
+        <code>
+{% raw %}
+const newObject = [
+    {% for item in module.field_group %}
+        {
+        "col_name": "{{ item.col_name }}",
+        "input_type": "{{ item.input_type }}"
+        }{% if not loop.last %},{% endif %}
+    {% endfor %}
+];
+
+console.log("?? newObject", newObject);
+{% endraw %}
+        </code>
+    </pre>
+</div>
+
+<div class="jsonWrap">
+    <h2>Result JSON escaped from JavaScript</h2>
+    <pre>
+        <code>
+
+        </code>
+    </pre>
+</div>
+
+<p>Please check the console for the result, and see how object <code>newObject</code> works on JavaScript</p>
+
+<script>
+    document.querySelector('.jsonWrap>pre>code').innerText = JSON.stringify(newObject, null, 2);
+</script>
+
+{# End of DEMO part #}

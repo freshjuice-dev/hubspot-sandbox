@@ -1,0 +1,59 @@
+[ {
+  "id" : "ff398ab6-d0b5-dc5d-efd0-284020ead432",
+  "name" : "field_group",
+  "display_width" : null,
+  "label" : "Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : null,
+    "sorting_label_field" : "dc9ae0c9-228f-2287-02dc-71e9b7aa5bfa",
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "dc9ae0c9-228f-2287-02dc-71e9b7aa5bfa",
+    "name" : "col_name",
+    "display_width" : null,
+    "label" : "col_name",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "foo"
+  }, {
+    "id" : "7d967cef-0879-f7ad-8de0-b8fb55ae11ea",
+    "name" : "input_type",
+    "display_width" : null,
+    "label" : "input_type",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "bar"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "col_name" : "foo",
+    "input_type" : "bar"
+  }, {
+    "col_name" : "doo",
+    "input_type" : "dar"
+  }, {
+    "col_name" : "soo",
+    "input_type" : "sar"
+  }, {
+    "col_name" : "hoo",
+    "input_type" : "har"
+  }, {
+    "col_name" : "voo",
+    "input_type" : "var"
+  } ]
+} ]
