@@ -1,0 +1,17 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Test
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+    {% dnd_area "dnd_area"
+        label="Main section",
+        class="body-container body-container--contact"
+    %}
+
+        {# nada #}
+
+    {% end_dnd_area %}
+{% endblock body %}

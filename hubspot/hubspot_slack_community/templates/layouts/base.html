@@ -1,0 +1,44 @@
+<!--
+templateType: none
+-->
+<!doctype html>
+<html lang="{{ html_lang }}" {{ html_lang_dir }} class="child_theme">
+<head>
+    <meta charset="utf-8">
+    {% if page_meta.html_title %}<title>{{ page_meta.html_title }}</title>{% endif %}
+
+    <meta name="description" content="{{ page_meta.meta_description }}">
+
+    {% block template_stylesheets %}
+        {# This block is intended to be used if a template requires template specific style sheets #}
+    {% endblock template_stylesheets %}
+
+    {% if not site_settings.include_jquery %}
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    {% endif %}
+
+    {{ standard_header_includes }}
+</head>
+<body>
+<div class="body-wrapper {{ builtin_body_classes }}">
+    {% block header %}
+        {# nada #}
+    {% endblock header %}
+
+    {% block body %}
+        {# nada #}
+    {% endblock body %}
+
+    {% block footer %}
+        {# nada #}
+    {% endblock footer %}
+</div>
+
+{# To see a full list of what is included via standard_footer_includes please reference this article: https://developers.hubspot.com/docs/cms/hubl/variables#required-page-template-variables #}
+{{ standard_footer_includes }}
+
+{% block footer_scripts %}
+    {# This block is intended to be used if a template requires template specific javascript #}
+{% endblock footer_scripts %}
+</body>
+</html>

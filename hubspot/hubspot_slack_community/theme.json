@@ -1,0 +1,15 @@
+{
+  "label": "HubSpot Sandbox",
+  "version":"1.0.0",
+  "enable_domain_stylesheets": false,
+  "license": "MIT",
+  "responsive_breakpoints": [
+    {
+      "name": "mobile",
+      "mediaQuery": "@media (max-width: 767px)",
+      "previewWidth": {
+        "value": 490
+      }
+    }
+  ]
+}
