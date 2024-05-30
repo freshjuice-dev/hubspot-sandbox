@@ -1,0 +1,30 @@
+{
+  "name": "hubspot-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "fetch:hubspot": "npx hs fetch --overwrite / ./hubspot",
+    "push:hubspot": "npx hs upload ./hubspot /",
+    "watch:hubspot": "npx hs watch ./hubspot /",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/freshjuice-dev/hubspot-sandbox.git"
+  },
+  "keywords": [
+    "hubspot"
+  ],
+  "author": {
+    "name": "Alex Zappa",
+    "email": "alex@zappa.dev",
+    "url": "https://alex.zappa.dev"
+  },
+  "license": "MIT",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/freshjuice-dev/hubspot-sandbox/issues"
+  },
+  "homepage": "https://github.com/freshjuice-dev/hubspot-sandbox#readme"
+}
